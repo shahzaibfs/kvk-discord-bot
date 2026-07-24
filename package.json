@@ -1,0 +1,26 @@
+{
+  "name": "kvk-bot-by-2044",
+  "version": "3.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "node --watch .",
+    "redis": "docker compose up -d redis",
+    "dev": "docker compose up -d && npm run start:dev",
+    "down": "docker compose down",
+    "logs": "docker compose logs -f redis"
+  },
+  "keywords": [],
+  "author": "TFAGaming",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dayjs": "^1.11.21",
+    "discord.js": "^14.27.0",
+    "discordjs-v14-bot-template": "file:",
+    "dotenv": "^16.6.1",
+    "quick-yaml.db": "^1.2.2",
+    "redis": "^6.1.0"
+  }
+}
